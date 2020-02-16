@@ -48,9 +48,8 @@ const App = () => {
             <Row>
                 <Col xs={12} md={5}>
                     <form onSubmit={handleAddTodo}>
-                        Add new todo:{' '}
-                        <input type="text" name="newTodo"/>{' '}
-                        <input type="submit" value="Add Todo"/>
+                        <input type="text" name="newTodo" className="form-control" placeholder="E.g., Do the dishes"/>{' '}
+                        <input type="submit" value="Add Todo" className="btn btn-success" style={{marginTop: 5}}/>
                     </form>
                 </Col>
                 <Col xs={12} md={6}>
