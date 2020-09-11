@@ -2,7 +2,7 @@ import React,{useState, useEffect} from 'react';
 import {render} from 'react-dom'
 import {v4} from 'uuid'
 import { Container, Row, Col } from 'reactstrap'
-import cogo      from 'cogo-toast'
+import cogo from 'cogo-toast'
 import TodoList from './Components/TodoList'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -27,9 +27,9 @@ const App = () => {
     }
 
     const handleRemove = id => {
-        const removedTodo = todos.find(todo => todo.id == id);
+        // const removedTodo = todos.find(todo => todo.id == id);
+        // cogo.error(`The todo '${removedTodo.todo}' is removed`, {position: 'bottom-right'});
         const filteredTodos = todos.filter(todo => todo.id != id);
-        cogo.error(`The todo '${removedTodo.todo}' is removed`, {position: 'bottom-right'});
         setTodos(filteredTodos);
     }
 

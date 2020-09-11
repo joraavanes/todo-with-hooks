@@ -16,7 +16,7 @@ const Todo = props => {
 
         return () => {
             // console.log(props.todo);
-            // cogo.error(`The todo '${props.todo.todo}' is removed`, {position: 'bottom-right'});
+            cogo.error(`The todo '${props.todo.todo}' is removed`, {position: 'bottom-right'});
         };
     }, []);
 
